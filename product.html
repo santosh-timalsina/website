@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" name="myCheckbox" id="tog" />
+      <label for="tog" class="fas fa-bars" id="menu"></label>
+      <a href="#" class="logo">grocery<span>.</span></a>
+      <nav class="navbar">
+        <a href="index.html" class="active">home</a>
+        <a href="product.html">product</a>
+        <a href="gallery.html">gallery</a>
+        <a href="contact.html">contact</a>
+      </nav>
+      <div class="shopping">
+        <a href="cart.html" class="fas fa-shopping-cart" id="shoppinglogo"></a>
+        <span class="quantity">0</span>
+      </div>
+      <div class="icons">
+        <a class="fas fa-search" id="search-btn"></a>
+        <a href="#" class="fas fa-user" id="login-btn"></a>
+      </div>
+      <div id="search-container"  >
+        <input
+          type="search" class="searchbar"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <div class="button">
+           <button id="search">Search</button>
+          </div>
+       
+      </div>
+      <div class="f-box">
+        <div class="title-box">
+        </div>
+        <div class="form-box">
+          <form action="#">
+            <input type="text" placeholder="Email address or phone number">
+            <input type="password" placeholder="Password">
+            <button type="submit">Log In</button>
+            <a href="#">Forgotten Password</a>
+          </form>
+          <hr>
+          <div class="create-btn">
+            <a href="#create" id="create">Create New Account</a>
+          </div>
+        </div>
+      </div>
+      <div class="register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Create password" required>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Confirm password" required>
+          </div>
+          <div class="policy">
+            <input type="checkbox">
+            <h3>I accept all terms & condition</h3>
+          </div>
+          <div class="input-box button">
+            <input type="Submit" value="Register Now">
+          </div>
+          <div class="text">
+            <h3>Already have an account? <a href="#" id="log">Login now</a></h3>
+          </div>
+        </form>
+      </div>
+    </header>
+    <h1 class="heading">products<span>.</span></h1>
+    <div class="list"></div>
+</div>
+<div class="card">
+  <ul class="listcard"></ul>
+  <div class="checkout">
+      <div class="total">0</div>
+      <div class="closeshopping">close</div>
+      <div class="check">check-out</div>
+  </div>
+</div>
+    <footer class ="footer" id="footer">
+      <div class="footcontainer">
+          <div class="footrow">
+              <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                      <li><a href="#">about us</a></li>
+                      <li><a href="#">products</a></li>
+                      <li><a href="termandcondition.html">privacy policy</a></li>
+                      <li><a href="#">affiliate program</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">shopping</a></li>
+                      <li><a href="#">order statu</a></li>
+                      <li><a href="#">payment option</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>online shop</h4>
+                  <ul>
+                      <li><a href="#">Flower</a></li>
+                      <li><a href="#">Flower</a></li>
+                      <li><a href="#">Flower</a></li>
+                      <li><a href="#">Flower</a></li> 
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer> 
+    <script src="product.js"></script>
+    <script src="product.js"></script>
+    <script src="script.js"></script>
+    <script src="myscripts.js"></script>
+    <script src="productlist.js"></script>
+    
+
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="Logged in Customer's Profile Zone.css">
+	<title>Logged-in Customer's Profile Zone</title>
+</head>
+<body>
+	<section id="sidebar" class="sidebarr">
+		<a href="#" class="brand">
+			<i class="bx bxs-smile"></i>
+			<span class="text" id="adminhub">user Dashbord</span>
+		</a>
+		<a href="#" class="brand">
+			<i class="fas fa-user"></i>
+			<span class="text">profile</span>
+		</a>
+		<a href="#" class="brand">
+			<i class="fas fa-bell"></i>
+			<span class="text">notification</span>
+		</a>
+		<a href="#" class="brand">
+			<i class="fas fa-cog"></i>
+			<span class="text">Settings</span>
+		</a>
+	</section>
+
+	<section id="content">
+		<nav>
+			<i class="fas fa-bars" id="menu-icon"></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+				</div>
+			</form>
+		</nav>
+
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class="bx bx-chevron-right"></i></li>
+						<li>
+							<a class="active" href="index.html">Home</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class="fas fa-cloud-download-alt"></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+			<section id="ordered-products">
+				<h2>Ordered Product's List Page</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Product Name</th>
+							<th>Quantity</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Product A</td>
+							<td>2</td>
+							<td>$30</td>
+						</tr>
+						<tr>
+							<td>Product B</td>
+							<td>1</td>
+							<td>$20</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="purchased-history">
+				<h2>Purchased History Page</h2>
+				<ul>
+					<li>Product A - Purchased on 2023-08-01</li>
+					<li>Product B - Purchased on 2023-07-30</li>
+				</ul>
+			</section>
+			</main>
+			</section>
+			<section id="account-settings">
+				<h2>Account Settings Page</h2>
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" value="santosh timalsina">
+					<label for="email">Email:</label>
+					<input type="email" id="email" value="timalsinasantosh19@gmail.com">
+					<label for="password">Password:</label>
+					<input type="password" id="password" value="********">
+					<button type="submit">Save Changes</button>
+				</form>
+	</section>
+	</body>
+	<script src="admin.js"></script>
+</body>
+</html>

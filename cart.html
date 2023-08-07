@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new website</title>
+    <link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="cart.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" name="myCheckbox" id="tog" />
+      <label for="tog" class="fas fa-bars" id="menu"></label>
+      <a href="#" class="logo">grocery<span>.</span></a>
+      <nav class="navbar">
+        <a href="index.html" class="active">home</a>
+        <a href="product.html">product</a>
+        <a href="gallery.html">gallery</a>
+        <a href="contact.html">contact</a>
+      </nav>
+      <div class="shopping">
+        <a href="cart.html" class="fas fa-shopping-cart" id="shoppinglogo"></a>
+        <span class="quantity">0</span>
+      </div>
+      <div class="icons">
+        <a class="fas fa-search" id="search-btn"></a>
+        <a href="#" class="fas fa-user" id="login-btn"></a>
+      </div>
+      <div id="search-container"  >
+        <input
+          type="search" class="searchbar"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <div class="button">
+           <button id="search">Search</button>
+          </div>
+       
+      </div>
+      <div class="f-box">
+        <div class="title-box">
+        </div>
+        <div class="form-box">
+          <form action="#">
+            <input type="text" placeholder="Email address or phone number">
+            <input type="password" placeholder="Password">
+            <button type="submit">Log In</button>
+            <a href="#">Forgotten Password</a>
+          </form>
+          <hr>
+          <div class="create-btn">
+            <a href="#create" id="create">Create New Account</a>
+          </div>
+        </div>
+      </div>
+      <div class="register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Create password" required>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Confirm password" required>
+          </div>
+          <div class="policy">
+            <input type="checkbox">
+            <h3>I accept all terms & condition</h3>
+          </div>
+          <div class="input-box button">
+            <input type="Submit" value="Register Now">
+          </div>
+          <div class="text">
+            <h3>Already have an account? <a href="#" id="log">Login now</a></h3>
+          </div>
+        </form>
+      </div>
+    </header>
+    <div class="wrapper">
+		<h1>Shopping Cart</h1>
+		<div class="project">
+			<div class="shop">
+				<div class="box">
+					<img src="photo/3.png">
+					<div class="contentt">
+						<h3>Tomatoes</h3>
+						<h4>Price: $40</h4>
+						<p class="unit">Quantity: <input name="" value="2"></p>
+						<p class="btn-area"><i aria-hidden="true" >Remove</p>
+					</div>
+				</div>
+				<div class="box">
+					<img src="photo/2.png">
+					<div class="contentt">
+						<h3>onions</h3>
+						<h4>Price: $40</h4>
+						<p class="unit">Quantity: <input name="" value="1"></p>
+						<p class="btn-area"><i aria-hidden="true" >Remove</p>
+					</div>
+				</div>
+				<div class="box">
+					<img src="photo/10.png">
+					<div class="contentt">
+						<h3>Milk</h3>
+						<h4>Price: $250</h4>
+						<p class="unit">Quantity: <input name="" value="0"></p>
+						<p class="btn-area"><i aria-hidden="true" >Remove</p>
+					</div>
+				</div>
+			</div>
+			<div class="right-bar">
+				<p><span>Subtotal</span> <span>$120</span></p>
+				<hr>
+				<p><span>Tax (5%)</span> <span>$6</span></p>
+				<p><span>Total</span> <span>$141</span></p><a href="checkout.html"><i class="fa fa-shopping-cart"></i>PROCEED TO CHECKOUT</a>
+			</div>
+		</div>
+	</div>
+  <script src="myscripts.js"></script>
+  <script src="product.js"></script>
+  <script src="productlist.js"></script>
+  <script src="script.js"></script>
+  </body>
+  </html>

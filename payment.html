@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="payment.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" name="myCheckbox" id="tog" />
+      <label for="tog" class="fas fa-bars" id="menu"></label>
+      <a href="#" class="logo">grocery<span>.</span></a>
+      <nav class="navbar">
+        <a href="index.html" class="active">home</a>
+        <a href="product.html">product</a>
+        <a href="gallery.html">gallery</a>
+        <a href="contact.html">contact</a>
+      </nav>
+      <div class="shopping">
+        <a href="cart.html" class="fas fa-shopping-cart" id="shoppinglogo"></a>
+        <span class="quantity">0</span>
+      </div>
+      <div class="icons">
+        <a class="fas fa-search" id="search-btn"></a>
+        <a href="#" class="fas fa-user" id="login-btn"></a>
+      </div>
+      <div id="search-container"  >
+        <input
+          type="search" class="searchbar"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <div class="button">
+           <button id="search">Search</button>
+          </div>
+       
+      </div>
+      <div class="f-box">
+        <div class="title-box">
+        </div>
+        <div class="form-box">
+          <form action="#">
+            <input type="text" placeholder="Email address or phone number">
+            <input type="password" placeholder="Password">
+            <button type="submit">Log In</button>
+            <a href="#">Forgotten Password</a>
+          </form>
+          <hr>
+          <div class="create-btn">
+            <a href="#create" id="create">Create New Account</a>
+          </div>
+        </div>
+      </div>
+      <div class="register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Create password" required>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Confirm password" required>
+          </div>
+          <div class="policy">
+            <input type="checkbox">
+            <h3>I accept all terms & condition</h3>
+          </div>
+          <div class="input-box button">
+            <input type="Submit" value="Register Now">
+          </div>
+          <div class="text">
+            <h3>Already have an account? <a href="#" id="log">Login now</a></h3>
+          </div>
+        </form>
+      </div>
+    </header>
+<body>
+    <div class="payment-col-50">
+        <div class="payment-container">
+          <h2>Payment</h2>
+          <form action="#" id="paymentForm">
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+            <h4>Payment Option</h4>
+              <select name="paymentOption" id="payment">
+                <option value="card">Payment with Card</option>
+                <option value="esewa">Payment with eSewa</option>
+                <option value="cod" selected>Cash on Delivery</option>
+              </select>
+            <div>
+             
+            <a href="thankyou.html" class="btn">CONFIRM ORDER</a>
+          </form>
+        </div>
+      </div>
+   </div>
+  <script src="myscripts.js"></script>
+  <script src="product.js"></script>
+  <script src="productlist.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

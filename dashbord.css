@@ -1,0 +1,334 @@
+/* Global Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f8f8;
+}
+
+.container {
+	display: flex;
+}
+#sidebar {
+	width: 250px;
+	background-color: #2f3d4c;
+	color: #fff;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: -300px;
+	height: 90%;
+	transition: left 0.3s ease;
+	list-style: none;
+}
+
+#sidebar.active {
+	left: 0;
+}
+
+#sidebar .brand {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+#sidebar .brand i {
+	font-size: 24px;
+	margin-right: 10px;
+}
+
+#sidebar .brand .text {
+	font-size: 20px;
+}
+
+#sidebar a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 10px;
+	padding: 8px 15px;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+}
+
+#sidebar a:hover {
+	background-color: #1a2633;
+}
+#menu-icon {
+	font-size: 24px; 
+	color: #2f3d4c; 
+	font-weight: bold;
+	cursor: pointer; 
+	margin-right: 20px;
+}
+
+#content {
+	flex: 1;
+	padding: 20px;
+}
+
+#content nav {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#content .nav-link {
+	margin-right: 20px;
+	text-decoration: none;
+	color: #2f3d4c;
+	font-weight: bold;
+}
+
+#content form {
+	display: flex;
+	align-items: center;
+}
+
+#content input[type="search"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+#content .search-btn {
+	padding: 10px 15px;
+	background-color: #2f3d4c;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+#content .search-btn:hover {
+	background-color: #1a2633;
+}
+
+/* Styles for the main section */
+main {
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.head-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.head-title h1 {
+	font-size: 24px;
+	color: #2f3d4c;
+}
+
+.head-title .breadcrumb {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.head-title .breadcrumb li {
+	margin: 0 5px;
+}
+
+.head-title .breadcrumb li i {
+	font-size: 12px;
+}
+
+.btn-download {
+	background-color: #2f3d4c;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 4px;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+	background-color: #1a2633;
+}
+
+ul.box-info {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+  }
+  
+ 
+  ul.box-info li {
+	text-align: center;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	width:280px;
+  }
+  
+
+  ul.box-info li i {
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+  
+ 
+  ul.box-info li .text {
+	font-family: Arial, sans-serif;
+  }
+  
+  
+  ul.box-info li .text h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+  }
+  
+  ul.box-info li .text p {
+	font-size: 14px;
+	margin: 0;
+  }
+
+.table-data {
+	font-family: Arial, sans-serif;
+	width: 100%;
+	margin-top: 20px;
+  }
+  
+ 
+  .table-data .order .head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .table-data .order .head h3 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+  }
+  
+
+  .table-data .order .head i {
+	font-size: 24px;
+  }
+  
+
+  .table-data .order table {
+	width: 100%;
+	border-collapse: collapse;
+  }
+  
+ 
+  .table-data .order th {
+	background-color: #f0f0f0;
+	padding: 12px;
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 2px solid #ccc;
+  }
+  
+  .table-data .order td {
+	padding: 12px;
+	border-bottom: 1px solid #ccc;
+  }
+  
+  
+  .table-data .order td  {
+	font-size: 20px;
+  }
+  
+  .table-data .order td i{
+	font-size: 30px;
+  }
+
+  .table-data .order td p {
+	margin: 0;
+	font-size: 14px;
+  }
+  
+
+  .table-data .order .status {
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+  }
+  
+  .table-data .order .completed {
+	background-color: #4caf50;
+	color: white;
+  }
+  
+  .table-data .order .pending {
+	background-color: #fbc02d;
+	color: white;
+  }
+  
+  .table-data .order .process {
+	background-color: #03a9f4;
+	color: white;
+  }
+  /* CSS for the container holding the notification and profile icons */
+.container {
+	position: relative;
+  }
+  
+
+  .notification {
+	position: absolute;
+	top: -10px;
+	left:400px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #000;
+  }
+  
+  .notification i {
+	font-size: 24px;
+  }
+  
+
+  .notification .num {
+	position: absolute;
+	background-color: #ff0000;
+	color: #fff;
+	font-size: 14px;
+	padding: 5px;
+	border-radius: 50%;
+	margin-left: 5px;
+	top: -14px;
+    left: 7px;
+  }
+  
+
+  .profile {
+	position: relative;
+	top: -10px;
+	font-size:50px;
+	left:700px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #000;
+  }
+  
+  .profile i {
+	font-size: 24px;
+  }
+  

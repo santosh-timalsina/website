@@ -1,0 +1,254 @@
+/* Global Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f8f8;
+}
+
+.container {
+	display: flex;
+}
+
+/* Styles for the sidebar */
+/* Styles for the sidebar */
+#sidebar {
+	width: 250px;
+	background-color: #2f3d4c;
+	color: #fff;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: -300px;
+	height: 50%;
+	transition: left 0.3s ease;
+}
+
+#sidebar.active {
+	left: 0;
+}
+
+#sidebar .brand {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+#sidebar .brand i {
+	font-size: 24px;
+	margin-right: 10px;
+}
+
+#sidebar .brand .text {
+	font-size: 20px;
+}
+
+#sidebar a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 10px;
+	padding: 8px 15px;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+}
+
+#sidebar a:hover {
+	background-color: #1a2633;
+}
+#menu-icon {
+	font-size: 24px; 
+	color: #2f3d4c; 
+	font-weight: bold;
+	cursor: pointer; 
+	margin-right: 20px;
+}
+
+#content {
+	flex: 1;
+	padding: 20px;
+}
+
+#content nav {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#content .nav-link {
+	margin-right: 20px;
+	text-decoration: none;
+	color: #2f3d4c;
+	font-weight: bold;
+}
+
+#content form {
+	display: flex;
+	align-items: center;
+}
+
+#content input[type="search"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+#content .search-btn {
+	padding: 10px 15px;
+	background-color: #2f3d4c;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+#content .search-btn:hover {
+	background-color: #1a2633;
+}
+
+/* Styles for the main section */
+main {
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.head-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.head-title h1 {
+	font-size: 24px;
+	color: #2f3d4c;
+}
+
+.head-title .breadcrumb {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.head-title .breadcrumb li {
+	margin: 0 5px;
+}
+
+.head-title .breadcrumb li i {
+	font-size: 12px;
+}
+
+.btn-download {
+	background-color: #2f3d4c;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 4px;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+	background-color: #1a2633;
+}
+
+/* Styles for the table */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+th, td {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+thead {
+	background-color: #f0f0f0;
+}
+
+/* Styles for the ordered products list */
+#ordered-products h2 {
+	margin-bottom: 10px;
+	color: #2f3d4c;
+}
+
+/* Styles for the purchased history list */
+#purchased-history h2 {
+	margin-bottom: 10px;
+	color: #2f3d4c;
+}
+
+#purchased-history ul {
+	list-style: none;
+	padding: 0;
+}
+
+#purchased-history li {
+	margin-bottom: 5px;
+}
+
+/* Styles for the account settings form */
+/* Styling for the main container */
+section#account-settings {
+	max-width: 1150px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the heading */
+  section#account-settings h2 {
+	text-align: center;
+	color: #333;
+  }
+  
+  /* Styling for the form labels */
+  section#account-settings label {
+	display: contents;
+	margin-bottom: 5px;
+	color: #333;
+  }
+  
+  /* Styling for the input fields */
+  section#account-settings input[type="text"],
+  section#account-settings input[type="email"],
+  section#account-settings input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  /* Styling for the Save Changes button */
+  section#account-settings button[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* Hover effect for the Save Changes button */
+  section#account-settings button[type="submit"]:hover {
+	background-color: #0056b3;
+  }
+  

@@ -1,0 +1,75 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10px; 
+}
+h1 {
+    text-align: center;
+}
+
+.order-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    margin-top: 0;
+}
+
+#subtotal, #shipping, #total {
+    font-weight: bold;
+}
+/* Style for the buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Active effect */
+  .btn:active {
+    background-color: #003b80;
+    border-color: #003b80;
+  }
+  
+  /* Additional styles for the "VISIT PROFILE" button */
+  .btn.visit-profile {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .btn.visit-profile:hover {
+    background-color: #1d9238;
+    border-color: #1d9238;
+  }
+  
+  .btn.visit-profile:active {
+    background-color: #136a23;
+    border-color: #136a23;
+  }
+  

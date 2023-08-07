@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+form#checkoutForm,
+form#registerForm {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+form#checkoutForm h2,
+form#registerForm h2 {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+}
+form#checkoutForm label,
+form#registerForm label {
+    font-weight: bold;
+    color: #555;
+}
+
+form#checkoutForm input[type="text"],
+form#checkoutForm input[type="email"],
+form#checkoutForm input[type="password"],
+form#registerForm input[type="text"],
+form#registerForm input[type="email"],
+form#registerForm input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form#checkoutForm input[type="text"]:focus,
+form#checkoutForm input[type="email"]:focus,
+form#checkoutForm input[type="password"]:focus,
+form#registerForm input[type="text"]:focus,
+form#registerForm input[type="email"]:focus,
+form#registerForm input[type="password"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+form#checkoutForm .btn,
+form#registerForm .btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form#checkoutForm .btn:hover,
+form#registerForm .btn:hover {
+    background-color: #2980b9;
+}
+
+/* Cart Section Styles */
+.col-25 {
+    flex: 1;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.col-25 .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 65px;
+}
+
+.col-25 .container h4 {
+    color: #e67e22;
+    margin-top: 0;
+}
+
+/* Flexbox and Responsive Styles */
+.checkout-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-75 {
+    flex: 1;
+}
+
+.col-100 {
+    width: 100%;
+}
+#fott{
+margin:0;
+}
+
+@media (max-width: 768px) {
+    .checkout-row {
+        flex-direction: column;
+    }
+
+    .col-25,
+    .col-75 {
+        flex: 100%;
+    }
+}
